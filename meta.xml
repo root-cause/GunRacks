@@ -1,0 +1,21 @@
+<meta>
+	<info name="GunRack" author="rootcause" type="script" />
+	
+	<!-- Files -->
+	<script src="GunRack.dll" type="server" lang="compiled" />
+	<script src="GunRack_client.js" type="client" lang="javascript" />
+	
+	<!-- Settings -->
+	<settings>
+		<setting name="rackDir" value="RackSaveData" default="RackSaveData" description="Directory name of the save files." />
+		<setting name="rackPrice" value="2500" default="2500" description="Price of a gun rack." />
+		<setting name="rackLimit" value="5" default="5" description="Amount of gun racks a player can own. (0 for no limits)" />
+		<setting name="rackSaveInterval" value="120" default="120" description="Seconds between two save operations." />
+	</settings>
+	
+	<!-- Resources -->
+	<include resource="MoneyAPI" />
+	
+	<!-- Libraries -->
+	<assembly ref="Newtonsoft.Json.dll" />
+</meta>
